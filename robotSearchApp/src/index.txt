@@ -1,0 +1,38 @@
+Life Cycle (hooks) of a component
+
+MOUNTING - is the start of the app
+Ex: clicking refresh, the app component (in the app.js file) gets mounted into the document 
+with the id of ROOT (this is in the index.js but the id is in the index.html).
+
+When we say we mount a component, we are replacing the id of root with the start of the app
+
+Runs through this and goes in this order
+constructor()
+
+componentWillMount()
+
+render()
+
+componentDidMount() - gets called after render
+
+
+UPDATING - Whenever a component changes
+
+Ex: the list - everytime we typed something the cardlist gets re-rendered bc we have new information (new inputs)
+
+componentWillReceiveProps()
+
+shouldComponentUpdate()
+
+componentWillUpdate()
+
+render()
+
+componentDidUpdate()
+
+
+
+
+Unmounting - When a component is removed from a page
+
+EX: if we change to a different page the component will unmount the APP component and it will be deleted
